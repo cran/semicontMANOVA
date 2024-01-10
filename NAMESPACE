@@ -1,0 +1,20 @@
+
+# Import all packages listed as Imports or Depends
+importFrom("stats", "cov2cor", "dnorm", "optimize", "pchisq", "rbinom")  
+importFrom(mvtnorm, dmvnorm, rmvnorm)
+importFrom(matrixcalc, is.positive.definite)   
+importFrom(parallel, mclapply, clusterMap)
+# Export all names
+export(
+  scMANOVA,
+  scMANOVAsimulation,
+  scMANOVAestimation,
+##  scMANOVAridge,
+  scMANOVApermTest
+)
+
+S3method(print, scMANOVA)
+S3method(print, scMANOVAestimation)
+  
+
+  
